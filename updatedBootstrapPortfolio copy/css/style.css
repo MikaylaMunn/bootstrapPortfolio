@@ -1,0 +1,45 @@
+/* list styles */
+ul {
+    list-style: none;
+}
+/* the photo I am using until I have one */
+.ladyPic {
+    border: solid 5px black;
+    margin-top: 5rem;
+}
+/* the border around the picture */
+.info { 
+    color: white;
+    border: solid 5px black;
+}
+/* the paragraph in the about me section */
+.paragraph {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+   
+}
+/* the last mile photo at the bottom of the page */
+.lastMile {
+    height: 50px;
+    width: 140px;
+}
+/* the name area */
+.name {
+    text-shadow: 1px 1px 2px black;
+}
+.no-image:hover {
+    color: black;
+}
+#portfolio,
+#aboutME,
+#contactME {
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    color: white;
+}
+.ph-text-left::placeholder{
+    text-align: left;
+}

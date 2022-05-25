@@ -1,0 +1,109 @@
+* {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+/* info about MMD's title */
+.info {
+    position: relative;
+    top: 17em;
+    width: 60%;
+}
+.info2{
+    position: relative;
+    top: -5em;
+    width: 60%;
+    text-shadow: 2px 2px 1px rgb(5, 5, 5);
+}
+/* big text on the main page */
+.bigText {
+font-size: 50px;
+-webkit-background-clip: text;
+color: white;
+text-shadow: 5px 5px 2px rgb(5, 5, 5);
+}
+/* home section with title, picture included */
+#home {
+    margin-top: 0em;
+}
+/* on the about us page in the carousel */
+.photoClass {
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+/* All li's included */
+.iTags{
+    margin-right: 2.5em;
+}
+.navbar-brand,
+.footerText {
+    text-shadow: 2px 2px 2px rgb(5, 5, 5);
+}
+li {
+    list-style: none;
+    font-size: 20px;
+}
+/* Only the links li */
+.links li {
+display: flex;
+}
+/* li on the footer */
+.locationNearYou li {
+    font-size: 20px;
+}
+/* All the a tag inside of the scrollspy */
+.list-group a {
+border: none;
+}
+/* The rounded images on the page with borders */
+.truck {
+    height: 60vh;
+    width: 70vw;
+    border: solid 5px black;
+    margin-top: 100px ;
+}
+.check-out {
+    height: 50vh;
+    width: 90vw;
+    border: solid 5px black;
+}
+/* on the menu page the cook photo */
+.cook {
+    margin-top: 8em;
+    height: 60vh;
+    width: 40vw; 
+    border: solid 5px black;
+}
+/* paragraph on the column next to the cook */
+#aboutUsContent {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+/* on the about us page where the information about us is displayed */
+.paragraph{
+    font-size: 30px;
+}
+/* hidden from view until something happens */
+.hidden {
+    display: none;
+}
+.d-block {
+    height: 120vh;
+    width: 100vw;
+}
+/* on the about us page */
+.carousel-caption,
+#order,
+#final {
+    text-shadow: 1px 1px 2px black;
+}
+/* item on the comment */
+.item {
+    font-size: 14px;
+    text-align: center;
+}
+#subBtn {
+    margin-left: 12%;
+}
+
+

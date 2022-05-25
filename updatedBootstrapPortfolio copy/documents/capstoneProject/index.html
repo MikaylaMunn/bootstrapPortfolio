@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Munn's Mobile Diner</title>
+  <link rel="shortcut icon" type="image/png" href="./Images/truck.jpeg">
+</head>
+<body>
+  <header id="top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+      <a class="navbar-brand fa fa-2x fa fa-bus-alt text-light" href="./index.html"> MMD's</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- button inside nav bar -->
+      <div class="collapse navbar-collapse justify-content-end text-light" id="navbarToggler">
+        <ul class="navbar-nav mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./html/menu.html">View Menu</a>
+          </li>
+        </ul>
+      </div><!-- div nabarToggler -->
+    </nav> <!-- nav bar -->
+  </header>
+  <!-- header -->
+  <div class="container-fluid justify-content-center text-center">
+    <!--My food truck-->
+    <div id="home">
+      <div class="info container-fluid mt-2 bg-info rounded text-light">
+        <h1 class="mt-4 fa-2x header name bigText fa fa-bus-alt"> MMD's</h1>
+        <p class="header name">Munn's Mobile Diner</p>
+      </div><!-- info container -->
+    </div><!-- home section -->
+    <img src="./Images/truck.jpeg" alt="Munn's Mobile Food Truck" class="mb-5 truck rounded-circle">
+  </div><!-- home for the picture of the truck -->
+
+  <footer class="bg-info text-light">
+    <div class="ui vertical footer segment justify-content-center text-center bg-info text-light">
+        <div class="ui center aligned container">
+            <div class="ui stackable inverted grid justify-content-center mt-2">
+                <div class="six wide column">
+                    <h5 class="ml-2 fa-2x offset-1 footerText"> Location Nearest You</h5>
+                    <div class="ui right labeled input">
+                        <input type="text" placeholder="Enter your Zip Code" id="location">
+                        <button class="ui basic button" data-toggle="modal" data-target="#modal2"
+                        onclick="showLocation(event)">
+                            <i class="search icon"></i>
+                            Search
+                        </button>
+                    </div>
+                    <!-- ui right labeled input  -->
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="text-center text-info">Zip Code Entered: </h2>
+                                    <br />
+                                    <h2 class="mt-0 ml-2 text-dark text-center justify-content-center fa fa-map-marker-alt ml-2"
+                                    id="modalLabel"></h2>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body-2">
+                                    <h3 class="text-info">Location Nearest You</h3>
+                                    <ul class="locationNearYou">
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                        onclick="reload(event)">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--six wide column -->
+                <div class="six wide column">
+                    <h5 class="footerText fa fa-globe fa-2x offset-1"> Find Us on the Web</h5>
+                    <br />
+                    <ul class="footerText iTags fa fa-2x mt-3 ml-5 text-center">
+                      <a href="https://www.facebook.com/profile.php?id=100080440276287"><i
+                        class="text-light fa fa-facebook-official"></i></a>
+                        <a href="https://www.linkedin.com/in/mikayla-munn-a171056a/"><i
+                          class="text-light fa fa-linkedin"></i></a>
+                          <a href="../../index.html"><i
+                            class="text-light fa fa-home"></i></a>
+                    </ul>
+                </div> <!-- six wide column second -->
+                <div class="container-fluid mt-4 h-25">&copy; Mikayla Munn 2021
+                </div>
+            </div>
+            <!--stackable inverted divided grid-->
+        </div>
+        <!-- center aligned container -->
+    </div>
+
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/location.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/payment.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Munn's Mobile Diner</title>
+    <link rel="shortcut icon" type="image/png" href="../Images/truck.jpeg">
+</head>
+<body>
+    <header id="top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+            <a class="navbar-brand fa fa-2x fa fa-bus-alt text-light" href="../index.html"> MMD's</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- button inside nav bar -->
+            <div class="collapse navbar-collapse justify-content-end text-light" id="navbarToggler">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home </a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#aboutUs">About Us</a>
+                            <a class="dropdown-item" href="#commented">Comments</a>
+                            <a class="dropdown-item" href="#top">Back to Top</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/menu.html">View Menu</a>
+                    </li>
+                </ul>
+            </div><!-- nav bar dropdown -->
+        </nav> <!-- nav bar -->
+    </header>
+    <!-- header -->
+    <div id="carouselFade" class="carousel slide carousel-fade justify-content-center" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="photoClass" src="../Images/dining-outside.jpeg" alt="outside dining">
+                <div class="carousel-caption">
+                    <h5 class="fa-2x text-center">Need a Break?</h5>
+                    <p>We offer tables and chairs for those who enjoy dining outside to take a break from work.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="photoClass" src="../Images/waiting-in-line.jpeg" alt="waiting in line">
+                <div class="carousel-caption">
+                    <h5 class="fa-2x text-center">Tired of Waiting?</h5>
+                    <p>Order online and find a location on the homepage. You can also pay online too.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="photoClass" src="../Images/cow.jpeg" alt="Cow on a Farm">
+                <div class="carousel-caption">
+                    <h5 class="fa-2x text-center">Our Food</h5>
+                    <p>Comes from local farmers and farmers markets our chefs take pride in cooking delicious dishes for
+                        you to enjoy.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="photoClass" src="../Images/hour-glass.jpeg" alt="Hour glass for time">
+                <div class="carousel-caption">
+                    <h5 class="fa-2x text-center">Our Hours</h5>
+                    <p>Our hours vary to serve you, when you submit your order we get a time and date you would like
+                        your order, you can see where we will be to pick up your order. We work around the clock to
+                        serve you better.</p>
+                </div>
+            </div>
+        </div> <!-- inner carousel -->
+        <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a><!-- prev -->
+        <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a><!-- next -->
+    </div><!-- carousel Fade -->
+    <div class="container-fluid mt-4 bg-info rounded">
+        <h4 id="aboutUs" class="mt-4 fa-2x header name text-center text-light"> About Us</h4>
+    </div> <!-- container fluid of the About Us section -->
+    <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+            <div class="column mt-5" id="aboutUsContent">
+                <p class="paragraph text-center">
+                    Founded in 2010, we take pride in being locally owned. We use locally grown foods from the
+                    farmers
+                    themselves. To make sure we make the best quality product for you. We know life is busy and we
+                    don't
+                    always have time to get the meal we need. We provide the meal straight to your workplace. For
+                    all
+                    those on-the-go people who need a minute to eat, this was made for you. We hope you enjoy it,
+                    because we enjoy making it for you.
+            </div>
+            <!--column-->
+            <div class="column" id="chef">
+                <img src="../Images/main-cook.jpeg" alt="Main Cook" class="cook rounded-circle mt-5">
+                <h2>Mika Lay</h2>
+                <p class="text-center">
+                    Head Chef
+                </p>
+            </div>
+            <!--column-->
+        </div> <!-- center aligned row -->
+    </div>
+    <!--grid to make the info and chef the same-->
+    <div class="container-fluid bg-info rounded justify-content-center">
+        <h4 id="commented" class="fa-2x header name text-center text-light">Comments</h4>
+    </div> <!-- container-fluid the header for comments -->
+    <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+            <div class="column">
+                <form class="ui fluid form">
+                    <div class="field mt-3">
+                        <input type="text" id="comment" class="h-50 w-50" placeholder="Enter comment">
+                        <br />
+                        <br />
+                        <div class="ui right labeled input h-50 w-50">
+                            <input type="text" id="name" class="h-50 w-50" placeholder="Enter your name">
+                            <button class="ui label" id="commentAdd">
+                                <i class="add circle link icon"></i>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="ui hidden divider"></div>
+            </div>
+            <!--column---->
+            <div class="column">
+                <ol class="comments">
+                    <li class="names justify-content-center"></li>
+                </ol>
+                <h3>This truck is delicious and so fast. I would most definitely use it again.</h3>
+                <p>Ade</p>
+                <h3>They are super fast, super good, and super cheap. Their products are awesome.</h3>
+                <p>Jim</p>
+            </div>
+            <!--column-->
+        </div> <!-- center aligned row -->
+    </div><!-- grid for the comments that can be added -->
+    <footer class="bg-info text-light">
+        <div class="ui vertical footer segment justify-content-center text-center bg-info text-light">
+            <div class="ui center aligned container">
+                <div class="ui stackable inverted grid justify-content-center mt-2">
+                    <div class="six wide column">
+                        <h5 class="ml-2 fa-2x offset-1 footerText"> Location Nearest You</h5>
+                        <div class="ui right labeled input">
+                            <input type="text" placeholder="Enter your Zip Code" id="location">
+                            <button class="ui basic button" data-toggle="modal" data-target="#modal2"
+                            onclick="showLocation(event)">
+                                <i class="search icon"></i>
+                                Search
+                            </button>
+                        </div>
+                        <!-- ui right labeled input  -->
+                        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="text-center text-info">Zip Code Entered: </h2>
+                                        <br />
+                                        <h2 class="mt-0 ml-2 text-dark text-center justify-content-center fa fa-map-marker-alt ml-2"
+                                            id="modalLabel"></h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body-2">
+                                        <h3 class="text-info">Location Nearest You</h3>
+                                        <ul class="locationNearYou">
+
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                            onclick="reload(event)">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--six wide column -->
+                    <div class="six wide column">
+                        <h5 class="footerText fa fa-globe fa-2x offset-1"> Find Us on the Web</h5>
+                        <br />
+                        <ul class="footerText iTags fa fa-2x mt-3 ml-5 text-center">
+                            <a href="https://www.facebook.com/profile.php?id=100080440276287"><i
+                                class="text-light fa fa-facebook-official"></i></a>
+                                <a href="https://www.linkedin.com/in/mikayla-munn-a171056a/"><i
+                                  class="text-light fa fa-linkedin"></i></a>
+                                  <a href="../../../index.html"><i
+                                    class="text-light fa fa-home"></i></a>
+                        </ul>
+                    </div> <!-- six wide column second -->
+                    <div class="container-fluid mt-4 h-25">&copy; Mikayla Munn 2021
+                    </div>
+                </div>
+                <!--stackable inverted divided grid-->
+            </div>
+            <!-- center aligned container -->
+        </div>
+    </footer>
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scrolling.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/payment.js"></script>
+    <script src="../js/location.js"></script>
+</body>
+
+</html>
